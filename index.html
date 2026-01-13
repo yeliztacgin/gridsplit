@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS (Geliştirme için kolaylık sağlar) -->
+    <!-- Tailwind CSS (Geliştirme için CDN kullanımı) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -55,7 +55,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
-    <!-- Uygulamanın ana giriş noktası -->
-    <script type="module" src="/index.tsx"></script>
+    <!-- Uygulamanın ana giriş noktası. Vite sisteminde importmap olmadan çalışmalıdır. -->
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
