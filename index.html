@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -6,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GridSplit | Resim Parçalayıcı & Çok Sayfalı PDF Poster Aracı</title>
     
-    <!-- Primary Meta Tags -->
+    <!-- SEO Meta Etiketleri -->
     <meta name="title" content="GridSplit | Resim Parçalayıcı & Çok Sayfalı PDF Poster Aracı">
-    <meta name="description" content="Büyük resimlerinizi parçalara ayırın ve standart yazıcılarda basılmak üzere çok sayfalı PDF olarak indirin. Ücretsiz ve hızlı poster yapma aracı.">
-    <meta name="keywords" content="resim parçalama, poster yapma, a4 poster baskı, büyük resim basma, resim bölücü, pdf poster, grid split">
-    <meta name="author" content="GridSplit">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gridsplit.vercel.app/">
-    <meta property="og:title" content="GridSplit | Dev Posterlerinizi Evde Basın">
-    <meta property="og:description" content="Resimlerinizi karelere bölün, PDF olarak indirin, A4 kağıtlarla dev posterler oluşturun.">
-    <meta property="og:image" content="https://gridsplit.vercel.app/og-image.jpg">
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Büyük resimlerinizi parçalara ayırın ve standart yazıcılarda basılmak üzere çok sayfalı PDF olarak indirin.">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (Geliştirme için kolaylık sağlar) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { scroll-behavior: smooth; }
         .grid-overlay {
             pointer-events: none;
             position: absolute;
@@ -50,7 +55,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
-    <!-- Vite standardına uygun script yüklemesi -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- Uygulamanın ana giriş noktası -->
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
